@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/port_favicon.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- 네비게이션 메뉴 -->
+  <nav>
+    <ul>
+      <li><a href="#main">Main</a></li>
+      <li><a href="#project_intro">Project</a></li>
+      <li><a href="#aboutme">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navman">
+      <img src="img/navman_off.png" alt="네비게이션 메뉴 off" class="off">
+      <img src="img/navman_on.png" alt="네비게이션 메뉴 on" class="on">
+    </div><!-- //.navman -->
+  </nav>
+  <!-- 1: 메인 썸네일 -->
+  <header class="page" id="main">
+    <div class="main_tit">
+      <div class="logo_connect">
+        <div class="logo_connect_all">
+          <div class="logo change">
+            <h1><img src="img/logo.png" alt="진주"></h1>
+          </div><!-- //.logo -->
+          <div class="connect change">
+            <div class="connect_project">
+              <p>PROJECT</p>
+            </div><!-- //.connect_project -->
+          </div><!-- //connect -->
+        </div><!-- //.logo_connect_all -->
+      </div><!-- logo_connect -->
+      <div class="f_sentence">
+        <p class="tit_name">JINJ<span>U</span></p>
+      </div><!-- f_sentence -->
+      <div class="s_sentence">
+        <p>P</p>
+        <div class="long_o">
+          <img src="img/emoticon.png" alt="이모티콘">
+        </div>
+        <p>RTF<span>★</span>LI<span>♡</span></p>
+      </div><!-- s_sentence -->
+    </div><!-- //.main_tit -->
+  </header>
+  <!-- 2: 프로젝트 리스트 -->
+  <section class="page" id="project_intro">
+    <h2>PROJECT</h2>
+  </section>
+  <section id="project">
+    <h3>PROJECT</h3>
+    <div class="project_list">
+      <div class="project_1 landing" data-aos="slide-right">
+        <div class="opacity">
+          <h5>Website 리디자인 _ 제주도청</h5>
+          <p>Lorem ipsum dolor sit amet, consec
+            tetuer adipiscing elit, sed diam nonu
+            mmy nibh euismod tincidunt ut laore</p>
+          <div class="landing_icon">
+            <a href="https://www.figma.com/proto/ZqBhsTtGER93YEYeqDfk6a/%EA%B3%A0%EC%A7%84%EC%A3%BC?page-id=356%3A281&node-id=396-22489&node-type=frame&viewport=-6168%2C521%2C0.41&t=QindyFsrHFr15H1N-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=356%3A5531" target="_blank"
+              ><img src="img/landing_icon.png" alt="랜딩페이지 아이콘"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project_2 landing" data-aos="slide-left">
+        <div class="opacity">
+          <h5>Website 반응형 디자인 _ Let's Stroll</h5>
+          <p>Lorem ipsum dolor sit amet, consec
+            tetuer adipiscing elit, sed diam nonu
+            mmy nibh euismod tincidunt ut laore</p>
+          <div class="landing_icon">
+            <a href="http://eve1.dothome.co.kr/letsstroll/" target="_blank" ><img src="img/landing_icon.png"
+                alt="랜딩페이지 아이콘"></a>
+          </div>
+        </div><!-- //.opacity -->
+      </div>
+      <div class="project_3 landing" data-aos="slide-right">
+        <div class="opacity">
+          <h5>앱 기획 _ NANA</h5>
+          <p>Lorem ipsum dolor sit amet, consec
+            tetuer adipiscing elit, sed diam nonu
+            mmy nibh euismod tincidunt ut laore</p>
+          <div class="landing_icon">
+            <a
+              href="https://www.figma.com/proto/drV67edDFtTNyiK8hSRc1O/%EA%B3%A0%EC%A7%84%EC%A3%BC?page-id=120%3A463&node-id=318-16753&node-type=frame&viewport=868%2C658%2C0.19&t=AntSsrh8O3kdphJl-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=318%3A21918" target="_blank"><img
+                src="img/landing_icon.png" alt="랜딩페이지 아이콘"></a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="project_4 landing" data-aos="slide-left">
+        <div class="opacity">
+          <h5>UXUI 디자인_selFlow</h5>
+          <p>Lorem ipsum dolor sit amet, consec
+            tetuer adipiscing elit, sed diam nonu
+            mmy nibh euismod tincidunt ut laore</p>
+          <div class="landing_icon">
+            <img src="img/landing_icon.png" alt="랜딩페이지 아이콘">
+          </div>
+        </div>
+      </div>
+      <div class="project_5 landing" data-aos="slide-right">
+        <div class="opacity">
+          <h5>UXUI 디자인_selFlow</h5>
+          <p>Lorem ipsum dolor sit amet, consec
+            tetuer adipiscing elit, sed diam nonu
+            mmy nibh euismod tincidunt ut laore</p>
+          <div class="landing_icon">
+            <img src="img/landing_icon.png" alt="랜딩페이지 아이콘">
+          </div>
+        </div>
+      </div>
+      <div class="project_6 landing" data-aos="slide-left">
+        <div class="opacity">
+          <h5>UXUI 디자인_selFlow</h5>
+          <p>Lorem ipsum dolor sit amet, consec
+            tetuer adipiscing elit, sed diam nonu
+            mmy nibh euismod tincidunt ut laore</p>
+          <div class="landing_icon">
+            <img src="img/landing_icon.png" alt="랜딩페이지 아이콘">
+          </div>
+        </div>
+      </div> -->
+
+    </div><!-- //.project_list -->
+  </section><!-- //.project -->
+
+  <!-- 3: 키워드 -->
+  <!-- <section class="page" id="keyword">
+    <div class="circle_wrap">
+      <div class="circle first_circle"></div>
+      <div class="circle second_circle">DETAIL</div>
+      <div class="circle third_circle">EFFORT</div>
+      <div class="circle fourth_circle">PASSION</div>
+      <div class="circle merged_circle">CAPABILITY</div>
+    </div>
+  </section> -->
+
+  <!-- 4: About Me -->
+  <section class="page" id="aboutme">
+    <div class="aboutme_all">
+      <div class="a_left">
+        <div class="a_left_txt">
+          <h2>About Me</h2>
+          <h3>
+            Hello! I’m <span>Ko JinJu</span>
+          </h3>
+          <p class="p_1">
+            안녕하세요! 사용자 중심의 경험을 디자인하는 UX/UI 디자이너 고진주입니다.<br>
+            경험, 데이터를 기반한 서비스를 만들기 위해 꼼꼼하게 분석하고 디테일에 집중하면서도,<br>
+            직관적인 사용성과 심미성을 균형있게 담아내려고 노력합니다.
+          </p>
+          <p class="p_2">
+            작은 부분도 놓치지 않는 세심함과 유연한 사고로<br>
+            브랜드와 사용자 모두에게 긍정적인 가치를 전달하는 디자이너가 되겠습니다.
+          </p>
+        </div><!-- //.a_left_txt -->
+        <div class="a_left_skill">
+          <h3>SKILL</h3>
+          <div class="skills">
+            <div class="skill">
+              <img src="img/figma.png" alt="figma">
+              <img src="img/photoshop.png" alt="Photoshop">
+              <img src="img/illust.png" alt="illust">
+              <div class="skill_category">
+                <p>Design</p>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="img/html.png" alt="HTML">
+              <img src="img/css.png" alt="CSS">
+              <div class="skill_category">
+                <p>Coding</p>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="img/chatgpt.png" alt="chatgpt">
+              <img src="img/midjourney.png" alt="midjourney">
+              <div class="skill_category">
+                <p>AI</p>
+              </div>
+            </div>
+          </div><!-- //.skills -->
+        </div><!-- //.a_left_skill -->
+      </div><!-- //.a_left -->
+      <div class="a_right">
+        <div class="profile_bg"></div>
+        <img src="img/profile.png" alt="임시 프로필 사진">
+      </div><!-- //.a_right -->
+    </div><!-- //.aboutme_all -->
+  </section>
+  <!-- 5. 끝인사 -->
+  <section class="page" id="thanks">
+    <p>Thanks For Scrolling This Far :)</p>
+    <img src="img/ropehuman.png" alt="로프타고 내려오는 사람" class="ropehuman">
+    <img src="img/rope.png" alt="로프" class="rope">
+  </section>
+
+  <!-- 6: 컨택트 -->
+  <section id="contact">
+    <img src="img/namecard1.png" alt="명함_1">
+    <img src="img/namecard2.png" alt="명함_2">
+    <img src="img/namecard3.png" alt="명함_3">
+    <div class="contact_tit">
+      <p>Contact</p>
+    </div>
+    <div class="contact_r">
+      <p>E-mail : jinju0407@naver.com</p>
+      <p>Instagram : j_j_hibb_</p>
+      <p>Behance :</p>
+    </div>
+  </section>
+</body>
+
+</html>
