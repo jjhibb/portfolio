@@ -1,0 +1,347 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+    font-family: 'Quirky Sans';
+    src: url('fonts/Quirky-Sans.eot');
+    src: url('fonts/Quirky-Sans.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Quirky-Sans.woff2') format('woff2'),
+        url('fonts/Quirky-Sans.woff') format('woff'),
+        url('fonts/Quirky-Sans.ttf') format('truetype'),
+        url('fonts/Quirky-Sans.svg#Quirky Sans') format('svg');
+}
+
+@font-face {
+    font-family: 'Graffiti Line';
+    src: url('fonts/GraffitiLine.eot');
+    src: url('fonts/GraffitiLine.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GraffitiLine.woff2') format('woff2'),
+        url('fonts/GraffitiLine.woff') format('woff'),
+        url('fonts/GraffitiLine.ttf') format('truetype'),
+        url('fonts/GraffitiLine.svg#Graffiti Line') format('svg');
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Alexandria", sans-serif;
+    cursor: url(../img/cursor.png), auto;
+}
+
+.page {
+    height: 100vh;
+}
+
+/* 1:스플래시 */
+
+#splash {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#splash .splash_all {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#splash .splash_all h2 {
+    font-size: 400px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 0;
+    position: relative;
+}
+
+#splash .splash_all h2:before {
+    z-index: -1;
+    content: attr(data-content);
+    position: absolute;
+    left: 0;
+    /* 글자 바깥쪽으로 나갔으면 하는 테두리 크기의 두 배 */
+    -webkit-text-stroke: 4px #bbb;
+}
+
+
+#splash .splash_all img:nth-child(2) {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+}
+
+/* 2: 메인 썸네일 */
+
+#main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main .main_tit {
+    font-size: 200px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main .main_tit .logo_connect {
+    width: 400px;
+    height: 350px;
+    position: relative;
+    perspective: 700px;
+}
+
+#main .main_tit .logo_connect .logo_connect_all {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 3s;
+    transform-style: preserve-3d;
+}
+
+#main .main_tit .logo_connect:hover .logo_connect_all {
+    transform: rotateY(-180deg);
+}
+
+#main .main_tit .logo_connect:hover .logo_connect_all .change {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+}
+
+#main .main_tit .logo_connect:hover .logo_connect_all .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .main_tit .logo_connect .logo_connect_all .connect {
+    display: none;
+}
+
+#main .main_tit .logo_connect:hover .logo_connect_all .connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    background: #FFDD7A;
+    border-radius: 50px;
+    transform: rotateY(180deg);
+}
+
+#main .main_tit .f_sentence {
+    letter-spacing: 10px;
+}
+
+#main .main_tit p.tit_name {
+    font-family: 'Quirky Sans';
+}
+
+#main .main_tit span {
+    font-family: 'Graffiti Line';
+}
+
+#main .main_tit .s_sentence {
+    display: flex;
+    align-items: center;
+}
+
+#main .main_tit .s_sentence .long_o {
+    width: 100px;
+    height: 100px;
+    border: 20px solid #333;
+    border-radius: 100px;
+    transition: 3s;
+}
+
+#main .main_tit .s_sentence .long_o:hover {
+    width: 400px;
+}
+
+#main nav {
+    width: 90px;
+    height: 133px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    right: 30px;
+    top: 10px;
+}
+
+#main nav ul {
+    font-family: "Afacad", sans-serif;
+    font-size: 30px;
+    position: absolute;
+    right: 90px;
+    top: 0;
+    background: #E2F0FF;
+    width: 180px;
+    height: 420px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+#main nav:hover ul {
+    display: flex;
+}
+
+#main nav ul li {
+    width: 140px;
+    height: 52px;
+    background: #B5E9FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(../img/cursor_link.png), auto;
+}
+
+#main nav ul li a {
+    cursor: url(../img/cursor_link.png), auto;
+}
+
+
+#main nav .navman {
+    position: relative;
+    cursor: url(../img/cursor_link.png), auto;
+}
+
+#main nav .navman img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#main nav .navman img.on {
+    display: none;
+}
+
+#main nav:hover .navman img.off {
+    display: none;
+}
+
+#main nav:hover .navman img.on {
+    display: block
+}
+
+/* 3: 프로젝트 리스트 */
+
+#project_intro {
+    background: #FFDD7A;
+    font-size: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#project_intro h2{
+    width: 300%;
+    text-align: center;
+}
+
+#project_intro h2:hover{
+    font-size: 300px;
+    transition: 3s;
+}
+
+#project h3 {
+    font-size: 120px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#project .project_list {
+    width: 1280px;
+    margin: 0 auto;
+    /* background: #ccc; */
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+#project .project_list .landing {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/랜딩_임시.png) no-repeat;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+
+#project .project_list .landing:hover {
+    width: 1280px;
+}
+
+#project .project_list .project_2:hover {
+
+} 
+
+#project .project_list .landing .opacity {
+    font-family: 'SUITE-Regular';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+#project .project_list .landing .opacity p {
+    display: none;
+}
+
+#project .project_list .landing:hover .opacity {
+    background: none;
+}
+
+#project .project_list .landing:hover .opacity h5 {
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    left: 540px; top: 60px;
+}
+
+#project .project_list .landing:hover .opacity p {
+    display: block;
+    position: absolute;
+    left: 540px; top: 180px;
+}
+
+
+
+#project .project_list div:nth-child(2n){
+    transform: translateX(780px);
+    margin-top: 50px;
+}
+
+/* 4: 키워드 */
+#keyword {
+    background: #B5E9FF;
+}

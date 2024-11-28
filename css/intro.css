@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#splash {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splash .splash_all {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#splash .splash_all h2 {
+  font-size: 400px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 200%;
+  background-position: 0% 100%;
+}
+
+#splash .splash_all h2::before{
+  content: attr(data-content);
+  position: absolute;
+  left: 0;
+  background: linear-gradient(180deg, rgba(181, 233, 255, 0) 0%, rgba(181, 233, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(100%);
+  animation: gradient-fill 3s ease forwards;
+} 
+@keyframes gradient-fill {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#splash .splash_all h2::after {
+  z-index: -1;
+  content: attr(data-content);
+  position: absolute;
+  left: 0;
+  /* 글자 바깥쪽으로 나갔으면 하는 테두리 크기의 두 배 */
+  -webkit-text-stroke: 4px #bbb;
+}
+
+
+#splash .splash_all img:nth-child(2) {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  animation: on .8s 3s infinite linear alternate;
+}
+
+@keyframes on {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
